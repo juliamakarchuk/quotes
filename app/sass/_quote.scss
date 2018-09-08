@@ -1,0 +1,14 @@
+.quote{
+    @include  flex-settings();
+    .quote__text{
+        width:90%;
+        text-align: center;
+        margin: auto;
+        font-size: px-to-rem(24px);
+        font-family: $decoration-font-family;
+        color:white;
+        @media (min-width: 760px){
+            font-size: px-to-rem(35px);
+        }
+    }
+}

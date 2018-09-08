@@ -1,0 +1,58 @@
+.quotes{
+    @include flex-settings(column);
+}
+.quotes__block-slider{
+    position: relative;
+    @include flex-settings(column);
+    height: px-to-rem(400px);
+    padding: 4rem 3rem 0rem 3rem;
+}
+.quotes__slider{
+    margin: auto;
+}
+.quotes__image{
+   display: block;
+   height: auto;
+   width: 100%;
+}
+.quotes__slide{
+    display:none;
+}
+.quotes__slide:first-child{
+   display:block;
+}
+.quotes__text{
+  font-family: $decoration-font-family;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.quotes__author{
+   display: inline-block;
+   font-family: $main-font-family;
+   font-weight: 200;
+   font-size: 1.3rem;
+}
+.slider__dots-block{
+    padding-bottom: 2rem;
+    text-align: center;
+  .slider__dot{
+     display: inline-block;
+     height: 0.6rem;
+     width: 0.6rem;
+     background-color:transparent;
+     border-radius: 50%;
+     border: 1px solid gray;
+  }
+}
+
+
+
+@media (min-width:760px){
+    .quotes{
+        @include flex-settings(row);
+    }
+    .quotes__image{
+        width: auto;
+    }
+}

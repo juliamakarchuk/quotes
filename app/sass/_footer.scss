@@ -1,0 +1,47 @@
+.footer{
+    padding: 2rem 3rem;
+    @include flex-settings(column-reverse);
+    @media (min-width:768px){
+        @include flex-settings(row, space-between, center);
+    }
+}
+.footer__legal{
+    @extend %item-style;
+    text-align: center;
+}
+.socials{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    @media (min-width:768px){
+        margin-bottom: 0;
+    }
+}
+.socials__link{
+    display: inline-block;
+    width: px-to-rem(22px);
+    height: px-to-rem(22px);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0.4rem;
+    &:last-child{
+        margin-right: 0rem;
+    }
+    &:hover{
+        opacity: 0.6;
+    }
+    &--facebook{
+        background-image: url('../../icon/icomoon/SVG/facebook-logo.svg');
+    }
+    &--linkedin{
+        background-image: url('../../icon/icomoon/SVG/linkedin-logo.svg')
+    }
+    &--inst{
+       background-image: url('../../icon/icomoon/SVG/instagram-social-network-logo-of-photo-camera.svg')
+    }
+    &--youtube{
+        background-image: url('../../icon/icomoon/SVG/youtube-logo.svg');
+    }
+    &--twitter{
+        background-image: url('../../icon/icomoon/SVG/twitter-logo-silhouette.svg');
+    }
+}

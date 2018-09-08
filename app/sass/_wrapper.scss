@@ -1,0 +1,22 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+}
+.wrapper-header-img{
+    @include bgi-settings();
+     position: relative;
+     background-image: url('../../images/slider.png');
+     opacity: 1;
+ }
+ .wrapper--secondary-bgc{
+     background-color: #ffe9e2;
+ }
+ .wrapper--image{
+     @include bgi-settings();
+     background-image: url('../../images/pexels-photo-133339.jpeg');
+     background-attachment: fixed;
+     height: 400px;
+ }
+ .wrapper--primary-bgc{
+     background-color: $wrapper-bgc-color;
+ }

@@ -1,0 +1,24 @@
+%button{
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: px-to-rem(10px) px-to-rem(25px);
+    font-weight:500;
+    font-size: px-to-rem(14px);
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    @media (min-width: 780px){
+        font-size: px-to-rem(16px);
+        padding: px-to-rem(14px) px-to-rem(30px);
+    }
+}
+%item-style{
+    font-size: 0.8rem;
+    font-family: $decoration-font-family;
+    font-weight: 400;
+    line-height: 1.4rem;
+    @media (min-width:760px){
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+}

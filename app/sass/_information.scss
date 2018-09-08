@@ -1,0 +1,65 @@
+.information{
+    @include flex-settings(row);
+    flex-wrap: wrap;
+    padding: 4rem 3rem;
+}
+.block{
+    flex-basis: 50%;
+    @media (min-width:1140px){
+        flex-basis: 25%;
+    }
+}
+.block--width{
+    @media (max-width: 479px){
+        flex-basis: 100%;
+        margin-top: 1rem;
+    }
+    @media (min-width:480px) and (max-width:1139px){
+        flex-basis: 50%;
+        margin-top: 1rem;
+    }
+}
+.subtitle{
+    text-transform: uppercase;
+    font-family: $main-font-family;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+    @media (min-width:768px){
+        font-size: 1.2rem;
+    }
+}
+.site-navigation__item,
+.shop-navigation__item,
+.contact-list__item{
+    @extend %item-style;
+    &:hover{
+        color: gray;
+    }
+}
+.subscribe-block__text{
+    @extend %item-style;
+    margin-bottom: 1rem;
+}
+.subscribe-form{
+
+    &__btn,
+    &__input{
+        display: block;
+    }
+}
+.subscribe-form__input{
+   width:100%;
+   background-color: #f2f4f5;
+   border : transparent;
+   padding: 0.5rem;
+   margin-bottom: 1rem;
+   font-family: $main-font-family;
+   outline: none;
+   @media (min-width:768px){
+       font-size: 0.8rem;
+   }
+}
+.subscribe-form__btn{
+    @extend %button;
+    padding: 0.4rem 1rem;
+}
