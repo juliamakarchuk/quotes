@@ -52,6 +52,9 @@ ul {
   position: relative;
   background-image: url("../../images/slider.png");
   opacity: 1; }
+  @media (min-width: 960px) {
+    .wrapper-header-img {
+      background-position: center top; } }
 
 .wrapper--secondary-bgc {
   background-color: #ffe9e2; }
@@ -126,18 +129,27 @@ ul {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 7rem 0; }
+  @media (min-width: 960px) {
+    .header__block-text {
+      padding: 9rem 0; } }
 
 .header__text:first-child {
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-size: 7rem; }
+  @media (min-width: 960px) {
+    .header__text:first-child {
+      font-size: 10rem; } }
 
 .header__text:last-child {
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1.5rem; }
+  @media (min-width: 960px) {
+    .header__text:last-child {
+      font-size: 3rem; } }
 
 .header__menu-icon::before {
   display: block;
@@ -455,7 +467,7 @@ ul {
   .posters-gallery__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    height: 12.5rem;
+    height: 14.375rem;
     margin-bottom: 0.8rem;
     cursor: pointer; }
     .posters-gallery__item:last-child {
@@ -475,21 +487,42 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .posters-gallery__item {
-      -ms-flex-preferred-size: 49%;
-          flex-basis: 49%; }
-    .posters-gallery__item:last-child {
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+      margin-right: 0.5rem;
       -webkit-box-flex: 2;
           -ms-flex-positive: 2;
-              flex-grow: 2;
-      height: 21.875rem; } }
+              flex-grow: 2; }
+      .posters-gallery__item:first-child {
+        -webkit-box-flex: 3;
+            -ms-flex-positive: 3;
+                flex-grow: 3; }
+      .posters-gallery__item:nth-child(2n) {
+        margin-right: 0; }
+      .posters-gallery__item:nth-last-child(-n+2) {
+        -webkit-box-flex: 3;
+            -ms-flex-positive: 3;
+                flex-grow: 3; }
+      .posters-gallery__item:last-child {
+        -webkit-box-flex: 3;
+            -ms-flex-positive: 3;
+                flex-grow: 3;
+        margin-right: 0; } }
 
 @media (min-width: 960px) {
   .posters-gallery__item {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%; }
-  .posters-gallery__item:nth-child(4) {
-    height: auto;
-    margin-right: 0.5rem; } }
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 0.5rem; }
+    .posters-gallery__item:nth-last-child(-n+2), .posters-gallery__item:last-child {
+      height: 300px; }
+    .posters-gallery__item:nth-child(3n) {
+      margin-right: 0rem; }
+    .posters-gallery__item:nth-child(2n) {
+      margin-right: 0.5rem; } }
 
 .information {
   display: -webkit-box;

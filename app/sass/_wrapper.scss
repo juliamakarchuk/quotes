@@ -7,6 +7,9 @@
      position: relative;
      background-image: url('../../images/slider.png');
      opacity: 1;
+     @media (min-width:960px){
+         background-position: center top;
+     }
  }
  .wrapper--secondary-bgc{
      background-color: #ffe9e2;

@@ -74,8 +74,7 @@ quoterDotsBlock.addEventListener('click', quoterSlider);
 
 
 ////////////////////// Slide Menu///////////
-
-menu.addEventListener('click', function(e){
+function slideMenu(e){
     e.preventDefault();
     if(e.target.nodeName=='A'){
         const href = e.target.getAttribute('href');
@@ -85,4 +84,6 @@ menu.addEventListener('click', function(e){
             window.scrollTo({ top: top, behavior: "smooth" });
         }, 400)
     }
-})
+}
+menu.addEventListener('click', slideMenu);
+menu.addEventListener('touchend', slideMenu);

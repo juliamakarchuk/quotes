@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   &__item{
       flex-basis: 100%;
-      height: px-to-rem(200px);
+      height: px-to-rem(230px);
       margin-bottom: 0.8rem;
       cursor: pointer;
     &:last-child{
@@ -27,23 +27,42 @@
     .posters-gallery{
      justify-content: space-between;
       &__item{
-        flex-basis: 49%;
-      }
-      &__item:last-child{
-          flex-grow: 2;
-          height: px-to-rem(350px);
+        flex-basis: 45%;
+        margin-right: 0.5rem;
+        flex-grow: 2;
+        &:first-child{
+          flex-grow: 3;
+        }
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+        &:nth-last-child(-n+2){
+          flex-grow: 3;
+        }
+        &:last-child{
+          flex-grow: 3;
+          margin-right:0;
+        }
       }
     }
 }
 @media (min-width:960px){
     .posters-gallery{
-
       &__item{
-        flex-basis: 33%;
-      }
-      &__item:nth-child(4){
-          height:auto;
+        flex-basis: 32%;
+        flex-grow: 1;
+        margin-right: 0.5rem;
+        
+        &:nth-last-child(-n+2),
+        &:last-child{
+          height: 300px;
+        }
+        &:nth-child(3n){
+          margin-right: 0rem;
+        }
+        &:nth-child(2n){
           margin-right: 0.5rem;
+      }
       }
     }
 }

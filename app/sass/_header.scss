@@ -16,18 +16,27 @@
 .header__block-text{
     align-self: flex-end;
     padding: 7rem 0;
+    @media(min-width: 960px){
+        padding: 9rem 0;
+    }
 }
 .header__text:first-child{
     color:white;
     font-family: $main-font-family;
     font-weight: 200;
     font-size: 7rem;
+    @media(min-width: 960px){
+        font-size: 10rem;
+    }
 }
 .header__text:last-child{
     color:white;
     font-family: $main-font-family;
     font-weight: 700;
     font-size: 1.5rem;
+    @media(min-width: 960px){
+        font-size: 3rem;
+    }
 }
 .header__menu-icon::before{
    display: block;
