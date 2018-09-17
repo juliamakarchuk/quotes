@@ -64,8 +64,12 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../images/pexels-photo-133339.jpeg");
-  background-attachment: fixed;
-  height: 400px; }
+  padding: 4rem 1rem; }
+  @media (min-width: 768px) {
+    .wrapper--image {
+      padding: 0;
+      background-attachment: fixed;
+      height: 400px; } }
 
 .wrapper--primary-bgc {
   background-color: #f2f4f5; }

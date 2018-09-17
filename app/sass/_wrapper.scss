@@ -17,8 +17,12 @@
  .wrapper--image{
      @include bgi-settings();
      background-image: url('../../images/pexels-photo-133339.jpeg');
-     background-attachment: fixed;
-     height: 400px;
+     padding: 4rem 1rem;
+     @media (min-width: 768px){
+        padding: 0;
+        background-attachment: fixed;
+        height: 400px;
+     }
  }
  .wrapper--primary-bgc{
      background-color: $wrapper-bgc-color;

@@ -75,8 +75,8 @@ quoterDotsBlock.addEventListener('click', quoterSlider);
 
 ////////////////////// Slide Menu///////////
 function slideMenu(e){
-    e.preventDefault();
     if(e.target.nodeName=='A'){
+        e.preventDefault();
         const href = e.target.getAttribute('href');
         const el = document.querySelector(href);
         const top = el.getBoundingClientRect().top;
